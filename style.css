@@ -1,0 +1,132 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the line height in all browsers.
+3. Prevent adjustments of font size after orientation changes in iOS.
+4. Use a more readable tab size (opinionated).
+*/
+
+html {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+
+.w3-theme-l5 {color:#000 !important; background-color:#fcfbf9 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#f6f1ea !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ede2d4 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#e3d4bf !important}
+.w3-theme-l1 {color:#000 !important; background-color:#dac6a9 !important}
+.w3-theme-d1 {color:#000 !important; background-color:#c6a77b !important}
+.w3-theme-d2 {color:#fff !important; background-color:#bc9662 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#af854b !important}
+.w3-theme-d4 {color:#fff !important; background-color:#967240 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#7d5f36 !important}
+
+body {
+    --padding-top-bottom: 20px;
+    margin: 0;
+    background-color: black;
+    padding: var(--padding-top-bottom) 0px;
+}
+
+.container {
+    display: flex;
+}
+
+.photo {
+    flex: 2;
+    background-image: url("./venue-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 20px #7d5f36 ridge;
+    border-radius: 20px;
+    position: relative;
+}
+
+.banner {
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.page {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.top {
+        padding: 20px;
+        padding-top: 100px;
+        font-size: 1.2rem;
+        font-weight: bold;
+}
+
+.bottom {
+        padding: 20px;
+        padding-bottom: 100px;
+}
+
+.form {
+        padding: 20px;
+}
+
