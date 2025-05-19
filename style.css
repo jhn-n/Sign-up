@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the line height in all browsers.
-3. Prevent adjustments of font size after orientation changes in iOS.
-4. Use a more readable tab size (opinionated).
-*/
-
 html {
   font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
     serif;
@@ -23,15 +16,6 @@ strong {
   font-weight: bolder;
 }
 
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
 
 button,
 input,
@@ -39,18 +23,10 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-  /* 1 */
   font-size: 100%;
-  /* 1 */
   line-height: 1.15;
-  /* 1 */
   margin: 0;
-  /* 2 */
 }
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
 
 button,
 [type="button"],
@@ -67,7 +43,6 @@ button,
   font-style: normal;
 }
 
-
 body {
   margin: 0;
   background-color: black;
@@ -78,6 +53,8 @@ body {
   display: flex;
   max-width: 1200px;
   margin: auto;
+  border: 20px #7d5f36 ridge;
+  border-radius: 20px;
 }
 
 .photo {
@@ -86,20 +63,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 20px #7d5f36 ridge;
-  border-left: 20px #7d5f36 ridge;
-  border-top: 20px #7d5f36 ridge;
-  border-radius: 20px 0 0 20px;
   position: relative;
 }
 
 .banner {
   position: absolute;
+  width: 100%;
   bottom: 50px;
+  color: #fcfbf9;
   background-color: black;
   opacity: 0.65;
-  color: #fcfbf9;
-  width: 100%;
   text-align: center;
   padding-left: 1em;
   font-size: 5rem;
@@ -123,18 +96,12 @@ body {
   padding-top: 100px;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 0px 20px 0px 0px;
-  border-top: 20px #7d5f36 ridge;
-  border-right: 20px #7d5f36 ridge;
 }
 
 .bottom {
   background-color: #ede2d4;
   padding: 30px 50px;
   padding-bottom: 100px;
-  border-right: 20px #7d5f36 ridge;
-  border-bottom: 20px #7d5f36 ridge;
-  border-radius: 0px 0px 20px 0px;
 }
 
 .bottom button {
@@ -151,7 +118,6 @@ body {
 .form-section {
   background-color: #e3d4bf;
   padding: 30px 50px;
-  border-right: 20px #7d5f36 ridge;
 }
 
 .form-section p {
